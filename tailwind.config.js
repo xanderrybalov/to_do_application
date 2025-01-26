@@ -30,7 +30,7 @@ export default {
       },
       fontSize: {
         'header-title': ['2.25rem', { lineHeight: '2.5rem' }],
-        'button-text': ['1.45rem', { lineHeight: '1.75rem' }],
+        'button-text': ['1.45rem', { lineHeight: '1.3rem' }],
       },
       maxWidth: {
         container: '20rem',
