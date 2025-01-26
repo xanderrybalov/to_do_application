@@ -10,9 +10,14 @@
     { id: 5, text: 'Run', completed: false }
   ];
 
+  let newTaskText = '';
+
   const addTask = () => {
-    const newTask = { id: Date.now(), text: 'New Task', completed: false };
-    tasks = [...tasks, newTask];
+    if (newTaskText.trim()) {
+      const newTask = { id: Date.now(), text: newTaskText, completed: false };
+      tasks = [...tasks, newTask];
+      newTaskText = ''; 
+    }
   };
 
   const toggleTask = (id: number) => {
@@ -23,10 +28,21 @@
 </script>
 
 <div class="relative flex justify-center p-container-padding">
-  <div class="w-full">
-    {#each tasks as task (task.id)}
-      <Task {task} onToggle={() => toggleTask(task.id)} />
-    {/each}
+  <div class="flex flex-col justify-center w-full">
+    <div class="w-full">
+      {#each tasks as task (task.id)}
+        <Task {task} onToggle={() => toggleTask(task.id)} />
+      {/each}
+    </div>
+  
+    <div class="my-input-margin-y w-full px-input-padding-x">
+      <input
+        type="text"
+        bind:value={newTaskText}
+        placeholder="Add Task"
+        class="w-full p-input-padding border border-secondary-violett focus:outline-none focus:ring-2 focus:secondary-violett"
+      />
+    </div>
   </div>
 
   <Button
