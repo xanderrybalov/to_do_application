@@ -20,8 +20,7 @@ export default {
       spacing: {
         'task-gap': '0.7rem',
         'input-padding': '0.75rem',
-        'container-margin': '2.5rem 1.5rem 2rem 1.5rem',
-        'button-container-gap': '2rem',
+        'container-padding': '2rem 0.5rem',
         'button-padding-x': '2rem',
         'button-padding-y': '0.3rem',
         'button-container-gap': '2rem',
@@ -32,6 +31,7 @@ export default {
       },
       maxWidth: {
         container: '20rem',
+        emojis: '2rem',
       },
       borderRadius: {
         'task-item': '0.5rem',
