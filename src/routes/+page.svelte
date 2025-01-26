@@ -20,7 +20,7 @@
 </script>
 
 <div class="min-h-screen bg-background-primary flex flex-col items-center p-12">
-  <div class="bg-white w-full max-w-container p-container-padding shadow-container">
+  <div class="bg-white w-full max-w-container shadow-container">
   <Header />
   <Footer />
 </div>
