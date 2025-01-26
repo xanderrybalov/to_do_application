@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-green': '#34D399',
+        'primary-green': '#01ce6b',
         'secondary-violett': '#b0afdb',
         'header-line-primary': '#f5f6fb',
         'task-completed': '#9CA3AF',
@@ -21,6 +21,11 @@ export default {
         'task-gap': '0.7rem',
         'input-padding': '0.75rem',
         'container-margin': '2.5rem 1.5rem 2rem 1.5rem',
+        'button-container-gap': '2rem',
+        'button-padding-x': '2rem',
+        'button-padding-y': '0.3rem',
+        'button-container-gap': '2rem',
+        'negative-button': '-1rem',
       },
       fontSize: {
         'header-title': ['2.25rem', { lineHeight: '2.5rem' }],
@@ -38,6 +43,9 @@ export default {
       },
       boxShadow: {
         container: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      },
+      transform: {
+        buttonScale: 'scale(1.05)',
       },
     },
   },
