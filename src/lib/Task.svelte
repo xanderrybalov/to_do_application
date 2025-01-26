@@ -23,7 +23,7 @@ function toggleState() {
     </span>
 
     <button
-        class="w-6 h-6 flex items-center justify-center"
+        class="flex items-center justify-center"
         onclick={toggleState}
         >
         {#if props.task.completed}
