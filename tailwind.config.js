@@ -22,6 +22,9 @@ export default {
         'input-padding': '0.75rem',
         'container-margin': '2.5rem 1.5rem 2rem 1.5rem',
       },
+      fontSize: {
+        'header-title': ['2.25rem', { lineHeight: '2.5rem' }],
+      },
       maxWidth: {
         container: '20rem',
       },
