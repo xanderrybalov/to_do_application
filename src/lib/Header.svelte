@@ -10,7 +10,11 @@ const dayName: string = today.toLocaleString('en-US', {
 const day: number = today.getDate();
 </script>
 
-<div class="text-center p-container-padding border-b-header-line border-header-line-primary">
-    <h1 class="text-header-title font-bold text-task-pending">{monthName}</h1>
-    <p class="text-sm text-secondary-violett font-header-semibold pt-task-gap">{dayName}, {monthName} {day}</p>
-</div>
+<header class="text-center p-container-padding border-b-header-line border-header-line-primary" aria-labelledby="current-date">
+    <h1 id="current-date" class="text-header-title font-bold text-task-pending" aria-live="polite">
+        {monthName}
+    </h1>
+    <p class="text-sm text-secondary-violett font-header-semibold pt-task-gap" aria-live="polite">
+        {dayName}, {monthName} {day}
+    </p>
+</header>
