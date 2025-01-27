@@ -8,7 +8,7 @@ export let placeholder: string = 'Add Task';
         type="text"
         bind:value={value}
         placeholder={placeholder}
-        class="w-full p-input-padding border border-secondary-violett focus:outline-none focus:input-ring focus:ring-secondary-violett"
+        class="w-full p-input-padding border border-input-border focus:outline-none focus:input-ring focus:ring-secondary-violett"
         aria-label="New task input"
         />
 </div>
