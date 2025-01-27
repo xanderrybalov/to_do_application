@@ -27,6 +27,7 @@ export default {
         'negative-button': '-1.5rem',
         'input-margin-y': '2rem',
         'input-padding-x': '0.5rem',
+        'button-negative': '-1.5rem',
       },
       fontSize: {
         'header-title': ['2.25rem', { lineHeight: '2.5rem' }],
@@ -44,11 +45,12 @@ export default {
       borderWidth: {
         'header-line': '0.3rem',
       },
+      ringWidth: {
+        'input-ring': '2px',
+      },
       boxShadow: {
         container: '0 4px 6px rgba(0, 0, 0, 0.1)',
-      },
-      transform: {
-        buttonScale: 'scale(1.05)',
+        button: '0 2px 4px rgba(0, 0, 0, 0.1)',
       },
     },
   },
