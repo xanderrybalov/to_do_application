@@ -6,6 +6,7 @@ export default {
       colors: {
         'primary-green': '#01ce6b',
         'secondary-violett': '#b0afdb',
+        'input-border': '#d5d7e8',
         'header-line-primary': '#f5f6fb',
         'task-completed': '#9CA3AF',
         'task-pending': '#4B5563',
